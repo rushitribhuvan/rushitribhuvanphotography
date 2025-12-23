@@ -1,90 +1,68 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rushi Tribhuvan Photography</title>
-
-    <style>
-        body {
-            background-color: pink;
-            font-family: Arial, sans-serif;
-            text-align: center;
-        }
-
-        h1 {
-            color: darkred;
-        }
-
-        .photos img {
-            margin: 10px;
-            border: 3px solid white;
-            border-radius: 10px;
-        }
-
-        .services, .packages {
-            background-color: white;
-            padding: 15px;
-            margin: 20px auto;
-            border-radius: 10px;
-            width: 80%;
-        }
-
-        .packages h2 {
-            color: green;
-        }
-
-        .price {
-            font-size: 24px;
-            color: red;
-            font-weight: bold;
-        }
-    </style>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
+<body class="bg-gray-100 text-gray-800">
 
-<body>
+    <!-- Hero Section -->
+    <header class="bg-cover bg-center h-screen" style="background-image: url('YOUR_HERO_IMAGE.jpg');">
+        <div class="h-full flex items-center justify-center bg-black bg-opacity-50">
+            <div class="text-center text-white px-6">
+                <h1 class="text-5xl font-bold mb-4">Rushi Tribhuvan Photography</h1>
+                <p class="text-xl mb-6">Capturing Moments That Last Forever</p>
+                <a href="#services" class="bg-yellow-400 text-black font-semibold px-8 py-3 rounded-lg hover:bg-yellow-500 transition">Book Your Date</a>
+            </div>
+        </div>
+    </header>
 
-    <h2>WELCOME TO</h2>
-    <h1>RUSHI TRIBHUVAN PHOTOGRAPHY</h1>
-    <h3>Book Your Date Now</h3>
+    <!-- Services -->
+    <section id="services" class="py-16 px-6 text-center">
+        <h2 class="text-3xl font-semibold mb-8">Our Photography Services</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-8">
+            <div class="bg-white p-6 rounded-lg shadow-lg">
+                <img src="YOUR_WEDDING_IMAGE.jpg" class="w-full h-48 object-cover rounded-md mb-4">
+                <h3 class="text-xl font-bold">Wedding Shoot</h3>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-lg">
+                <img src="YOUR_MATERNITY_IMAGE.jpg" class="w-full h-48 object-cover rounded-md mb-4">
+                <h3 class="text-xl font-bold">Maternity Shoot</h3>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-lg">
+                <img src="YOUR_BIRTHDAY_IMAGE.jpg" class="w-full h-48 object-cover rounded-md mb-4">
+                <h3 class="text-xl font-bold">Birthday Shoot</h3>
+            </div>
+        </div>
+    </section>
 
-    <!-- Photos Section -->
-    <div class="photos">
-        <img src="https://thehoncho.app/wp-content/uploads/2025/06/wedding-couple-pose-15.jpg"
-             height="200" width="200" alt="Wedding Shoot">
+    <!-- Packages -->
+    <section class="bg-white py-16 px-6 text-center">
+        <h2 class="text-3xl font-semibold mb-8">Photography Packages</h2>
+        <div class="max-w-2xl mx-auto text-lg text-gray-700 mb-4">
+            <p>✨ Professional Photography & Videography</p>
+            <p>✨ High Quality Edited Photos</p>
+            <p>✨ Album & Video Available</p>
+            <p class="mt-4 font-bold text-2xl">Starting From ₹24,999</p>
+        </div>
+        <a href="#contact" class="bg-yellow-400 text-black font-semibold px-8 py-3 rounded-lg hover:bg-yellow-500 transition">Contact for Booking</a>
+    </section>
 
-        <img src="https://www.redveds.com/wp-content/uploads/2023/09/EY6A2749-scaled-2-1366x2048.jpeg"
-             height="200" width="200" alt="Maternity Shoot">
+    <!-- Contact -->
+    <section id="contact" class="py-16 px-6">
+        <h2 class="text-3xl font-semibold text-center mb-6">Contact for Booking</h2>
+        <div class="text-center text-xl text-gray-800">
+            <p>📞 Mobile: <a href="tel:8459521455" class="text-blue-600 hover:underline">8459521455</a></p>
+            <p>📍 Location: NIMGAON VAIJAPUR</p>
+        </div>
+    </section>
 
-        <img src=https://images.squarespace-cdn.com/content/v1/5dea90a8da78c349f0c30294/1675362195618-7VIMLE2KTIBNXKIPFC1H/_MG_2019-Edit.png
-             height="200" width="200" alt="Birthday Shoot">
-    </div>
-
-    <!-- Services Section -->
-    <div class="services">
-        <h2>Our Photography Services</h2>
-        <p>📸 Wedding Shoot Available</p>
-        <p>🤰 Maternity Shoot Available</p>
-        <p>🎂 Birthday Shoot Available</p>
-        <p>🎉 All Types of Shoots Available</p>
-    </div>
-
-    <!-- Packages Section -->
-    <div class="packages">
-        <h2>Photography Packages</h2>
-        <p>✨ Professional Photography & Videography</p>
-        <p>✨ High Quality Edited Photos</p>
-        <p>✨ Album & Video Available</p>
-        <p class="price">Starting From ₹24,999</p>
-    </div>
-
-    <!-- Contact Section -->
-    <h3>Contact for Booking</h3>
-    <p>📞 Mobile: 8459521455</p>
-    <p>📍 Location: NIMGAON VAIJAPUR  </p>
-
-
-    <h2>THANKU FOR VISIT</h2>
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white text-center py-4">
+        <p>© 2025 Rushi Tribhuvan Photography — Thank You for Visiting!</p>
+    </footer>
 
 </body>
 </html>
