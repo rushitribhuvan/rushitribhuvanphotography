@@ -1,90 +1,68 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rushi Tribhuvan Photography</title>
-
-    <style>
-        body {
-            background-color: pink;
-            font-family: Arial, sans-serif;
-            text-align: center;
-        }
-
-        h1 {
-            color: darkred;
-        }
-
-        .photos img {
-            margin: 10px;
-            border: 3px solid white;
-            border-radius: 10px;
-        }
-
-        .services, .packages {
-            background-color: white;
-            padding: 15px;
-            margin: 20px auto;
-            border-radius: 10px;
-            width: 80%;
-        }
-
-        .packages h2 {
-            color: green;
-        }
-
-        .price {
-            font-size: 24px;
-            color: red;
-            font-weight: bold;
-        }
-    </style>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
+<body class="bg-gray-100 text-gray-800">
 
-<body>
+    <!-- Hero Section -->
+    <header class="bg-cover bg-center h-screen" style="background-image: url('YOUR_HERO_IMAGE.jpg');">
+        <div class="h-full flex items-center justify-center bg-black bg-opacity-50">
+            <div class="text-center text-white px-6">
+                <h1 class="text-5xl font-bold mb-4">Rushi Tribhuvan Photography</h1>
+                <p class="text-xl mb-6">Capturing Moments That Last Forever</p>
+                <a href="#services" class="bg-yellow-400 text-black font-semibold px-8 py-3 rounded-lg hover:bg-yellow-500 transition">Book Your Date</a>
+            </div>
+        </div>
+    </header>
 
-    <h2>WELCOME TO</h2>
-    <h1>RUSHI TRIBHUVAN PHOTOGRAPHY</h1>
-    <h3>Book Your Date Now</h3>
+    <!-- Services -->
+    <section id="services" class="py-16 px-6 text-center">
+        <h2 class="text-3xl font-semibold mb-8">Our Photography Services</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-8">
+            <div class="bg-white p-6 rounded-lg shadow-lg">
+                <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAoHCBUWFRgVFhYYGRgZGBoYGRwaGBgYGBkYGBgaGRoYGhgfIS4lHB4rHxoYJzgmKy8xNTU1GiQ7QDszPy42NTEBDAwMEA8QHBISHjQkISs0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NP/AABEIARMAtwMBIgACEQEDEQH/xAAbAAEAAgMBAQAAAAAAAAAAAAAAAwQBAgUGB//EADsQAAEDAgQDBQYEBgEFAAAAAAEAAhEDIQQSMUEiUWEFBnGBkRMyobHB8BRC0eEVUmJygvHCByMkkqL/xAAYAQEBAQEBAAAAAAAAAAAAAAAAAQIDBP/EACIRAQEAAgMBAAEFAQAAAAAAAAABAhESITFBUQMiQmFxE//aAAwDAQACEQMRAD8A+mItUUVsi1WyAiLVBsiIgIiICIiAiIgIiICIiAiIgIiICIiDAWFkLCDZaotkBERAREQEREBERARarZAREQEREBERAREQEREGAsrAWUBERAREQEREBERAREQEREBERAREQEREBERAREQYCytUQbItVsgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiINGlM4VZ7yFo16LpdWyrsqKcFEZREQEREBERAREQEREBERAREQEREBERAREQc50kqVlAquHqdlRxEI0lyAKSmVE2mdVMwIjdEhIRBEhIQESFmEGEWYSEGEhZRBiFmERAREQEREBERAREQcoMVzDNRjFtSEItToAsSgKIyiLEoMosSkoMosSkoMosSkoMosSkoMosSkoMosZljMg2RaFy0dUCGk0pKre2Q1UXSxKKsKiIaVm4kqZlfquQ963p1YU2unY9qsioqDKsqQ1FTS8KoWDUCpe0T2iJpd9oEzhUhUWWuQ0uZwsyqWZPaIaXA8LMql7RZ9oUNLkpKqe0KpdrdpexpPqZS8tADWNEuc5xDWtA6khDTrZlkOXxvvL30x7Xhjm/h+EOytcxzj/kJgWNl7XuN3hfisOXPAzsdkcR+aGtId4wb9QptdPXlyjdVVc1FqXqppI6otPaLUlRkoqaVgPUeZYzIJs6Kv7REHNdVWGE6qs6t5qUOlcdtaXqNVTCoqFF6ssfsukSrLXIXqLMtS5aROKiz7RVpW2ZBP7ReZ70d5vw8MZGc6k3y2kW5ruOevlHevGtfWc4Tr6XP7eilo9T3Y7xYnE18mZjmNEvlhDouIYWmJmLnqvcZ18t/6f4oBz2ODS4lrxBhxgWFtQOXVfSpWcct2xqzqVYNRVscTkfGecpjJlzzFsua2blK2zLIeto+fVu1MM8soOFR7s3vVGw9pcDxWAggx6Svad3ezW0mVHNFn1C90aAlrGx8PiuSe5DGw9r3ue54Jc9wJLBAyNDQBA4dui97h6WRtzA2bbK3oFzksrWWW8XNBWCVdqsa4GBB2jdc9zlq9MRvmWsqNz1CXptU7nrQuUXtFqXFTYl9oirZiiu0ctzDNtDy5rpUsG8CVx8M1zIgmAZg3C7dDtI7tkrljcfrW0/8PdEgi6ifhXtGbZW6faY3ap/x7D+VdNSor4fCvcBoFZHZzua3ZjBs1SjGn+Uqog/hx5p/DjzVkYp38q3Fc8lo7crH4TIx73OgBpOi+T0u6eJrB9djcwkmC5rcx1OWTczPTqvqXfDEZcJVP9JAvHEQct9rwo+wXs/C0AyIFNrbXGZoyv8A/oH1WbOx8f7KllVge0h1N4zts1/C6SL6EH6r7XhsMHta9rpa4Bw8CJXyvv8A4bJjg4cLajGOJixc0ljvOA1fSO6Jy4ZjZaQ2WjKSRY9b/e2gSao6X4A81pUwmUFxdAAJNthcq66qAJJgC5JsAvJd8e1XkNo0uKRLy0ExJDWXGx4kyy4zbWMly1bqPQYTt7DPe1jXgPYPddANwIjYqTH1nOBy9d18kw+AecQxgY5j3OacpAByDR4OzIa62lgN19a11/2phlcvW/1f08cZLPv97S4Y6KN+DJJM6lb4ES3wkehVjOtWOMUTgXc1G7AO5rpFy1zJqNOaOzzzWxwR5q/7Ra501Ec49nHmi6Iciag8plCkprnOLjMH4q3SaRqb9NF5/wDHR06LB0V+k5vJcvDvnYq8wLtixV9pCkDgqLSts8LYtueFkPVEvHNZcZQc3vnhXVsK9jJLjlIDdTf5Ljdxazm0n0HmH03kkO2DoBv0IOm5PgvVZY3XzjtXEOp1nva0ZhWLnAgw4Occzc2WLgepHUiVHT79sY91CoC1zeJhsTFwQ4OjTaxvMeHf7ov/APGaRoS6IiNh9F5Gn3ucywAyzAJIjnvA0v5L0PYnaD64dlLKYabjJczvlkR53XOZX7HS4Y76r0eLquDDlibRMEa7gkWjqvDM7CrVKr3Cq2mwg5C0Z2ObnL8uvCGmW2vcBegfhqznlucBlpcWS4xaGkOAuI2MfBRdvdpsoMbTYRMb6gcz1JupbfacJdSVawNFrX5YHBwMguIyC7DxEmSDe+srqPdaZEef6KphsMWsYBqGtDp2dkAIv93U1UMZGd+Uus2XhuY8mgG56LrPHO9ONisU4vgOIAtwkgydwdjfVejY87m6841ubEEXgOkki3DFp8QAu+CI1Wcfa3lqSROXlC5VniNDKxPNbYTvctA9RgpLjug3FRFC080RXk3zzVvBucIvCql6yx28rxTLtp3aLn7mfQKxmhcmlUgTN1ZbXlejHOM6X2vlDV6rnU8VxG2y1GKv0V/6RHTdV+4WDV6qoK5I8lW/EkjwS5yHa/UqQCZsAT6XXz7tDFHOS4/1AZ8mZ25AkAkOgagc5gk+q7UxUUHmQOGJv+YwdL7ryVZ0vIEWIcJcdWucCc1raXE3GoMLUu0qi+k5stcNgYLZBDIDiBBtOwBtFjAXou79TIwvY4Z2kl7QMrHUwACWNAu9pzEjrdefcywe3NmBGUuibBxkQ6IAnmIJvupsJXk5mF2cCCw6xcOAcNogXMQTbdLNxcbq7e4xPbzGkMDpe4cIghpdy+foVz8Fgiwuxdfjc0F7WC4aGjNMnV1rcrHXSt2VTc53G4FguQfecS0DisPP9DbuYoF1N7RcuY8DzaQFzm7f3OmWUk1i8o3vnWfUxLqRc1jiw087W5qYDcr4a0kEkyQJIuSZ0PmqeFZVrsa9xIc8Z3E5nETLuLUTz2mVszgptBmSMzvEiwPgItzlT9gYCpWrcByhoJc4iYBsI/qO3K6629OOPdm3v+yAz2jnMfmGWGjNmgSLAzouwavivP8AYPZRoM4nAvcGzlADQANBYE33PRdZz4C542yduuVlvS2K080OJHIqgK5nWy2e4xqnNjSya/itDiv7lDm6rQu3TlV0sNrzrKKk58FFOSacZr9St2ndVm1JB8LWU7ZyiNNAvK3IssqbKyyre23xVOnTMzuL+StYa5MncDW3RdMZUSsebHmPqoPaTE6An5rVpIIJ92Q31MLD6cHUeqXxV2lUm3T6KHJY3ET/ALW+FImOiQJiOeiutxlze2HEUbugF7R196fovOudxkxpNodLtZaAL8iDpOmsLsd4njJTbYzUaNCTvpB1C49R7jLYzXn3g4xxZRlk5oc7UbC267fpz9qZetW5QSbFsw007kBxNjDiIiGzG9wLlRvwweLWMy1oLSSJHDBvI4gLzbUQYyXWP9LsriHhkAkAXm0yLGByjQaVHk3ubA2OaWgtAcLkE5p05eY6srGDxT2APD2w0TDsrOHiAzCZAfczezQZtC9hhscH087ZEg2/M0gSQRsV4Z9QSNNNXB2jjmhruVgdJ05rr91cac76Z90gOHMG3D/6kC2mWLWWMsdzbWNVO0OzWVGuqUi4BoLiHe6Wi5LTzCm7l1RmrRcDI0etST98gpqNQYes9huxxkA6BpAIHxI8lc7C7MZSfWLDLXlmUcmwSB5FxH+IXKZ7ll9dM8JNZY+PQe2+igqYgR96rQv15/RQAG07n5ysZZWsSJ2ki3WFt7fadCqocd9Z0Qv/AF5qb0V0MwJN9Fiq6BZUm1vW3wCVXkkC4kmei3y6Z2t1vXRFGBex2Gvmi0riU8LctmCYO8WvEeKs0mOFj4+f2D6qsKlyW+Gvjus0qpBvfn9+i80auUXaj7SNZ5bG0fJbMqiBJ+/sKricTf003nRUa1e830+q1ti3t06lfhI0ObzsZFvFb3kgnQ7nmuNVq8VnHd2vkRbTX5rRuNfOUmztL7CSJHkIU3teT0OFacuaYhwBE7EXHqrGK4SI/NbXQ7klcqjjuEgEeI0sTF/RTfiswvBsT/kRqtzKa0bUO8pyik2SJfqNNWxPMGTbp0XGgjM64BM8J1EiLHQG58YOwVrvDipLAHGABIFj71vHQ26GdlVqOzZgAJYYa3MYBYW5/dvebEH9F6cPIl9azEAZTI0dfUAmRMkxl0O5OW99KjTGQ5ogktkFgGUyZi4I5766laucC2IcHQCRfKNXA5iRMwG6xINys14mY4TJdBcXZhrLYiDa5GgMkbbRq98xJcMpAi7WlpOhuZaOEaEQCN1P2VXy1musIOW2Y8JMm95ALjaYvKrMF3QXAHeI444nAXseK5JuI5KJjZBJFgbjKGmJ/lm/S+jCOiD0XezDQWVBNjkd82/8h6K52LiZc1p3ZPkHEfUJWZ7agGNBc4tgABxcXMcJtqdPio+ySWOLXtIyjRwg6gix8V5Musnpxu8KsdtdoGi0vDQXZgxgP5nOOlr6TdXC2NhIM/BeR7c7QGJLKNJrhUbUe58+6wNzNkuGxMH9ZC9Tg3ZG8dQve4kOdECToGtGguPmtcdOPJO9skmwFiba9PVVSNRNx9wpKhJaANSY0+7rfIQ2Z1+BF4ss3HZuIGGTvbpy+z6KZt5Ovjzv+igBhwty9I+SmZiDJGg2+R+iYz8p4tMdMWJ0+SLYVgCOoPwi6Lto5PIsxF+hN73kdNf06rH4m2addLEmI5RzlcqhiRIAF76ibmIPqrVSpMTa/LkLbwuPBzWK2KeZPKDeLwRcR5CxsoKmIgwIuSBMg6Od9NehUTAHADMZBvYC28GbaHTqsHs1kzncbk6W4hHO2g9fSzHH6ujDdoB22sE3AtqRrp4c1ZDgYi5385g9ZB+PVQv7Nc+S14B1JDH6nUiAYGsCdFPQw+UAZml7BAs46EkEmPSxUymPw1V9lNoDhmlpAMHlBNvX5LIcBNzvY6aAffiqbGPIsQbx7zLGYiJDhccvJQvxWUGSZBsNdvhvfxWeK7qLtO72NBBuHAWkAF07Wnx/aB1RhuC08UmHZr2AIBsZmSBOut7Qjtcl2WIEnnJkCNCIv5Lqd38EzE1CyoSWezze+ASc4a0FxMzYmIm2y9GNskmkV2AgkAO6REEukA24rm0dBcKNzP5W6nhMgRBymxJ4gBpYXERqu5W7pObLabnAAy2/nB6SvK4qrVY9zXZm5S5pGsOnNrcXEX3AF4Wratdjszs19Z0Na5oBgvJaBrxREzEAR8d16Vnc9k5jULzuDLAbybiTudz4rgYDvI9lJrKdFshsS+XZiWh2bK0A+U7qs2tjXwz8QWh0mGAMcSQdCIJidCRbdOX5WYvSu7Rp4J+RzBUe3ic/O7KMw90Dc9TdV+8veGhUoioxjmVeJjQQbwdZAuAd7bqlhux8OxkYh5LgZy5ph35S4i82Nha1ydVXdRovMsdU4di2GiRNpiBAOy526/x0kc7sakWs4DxO94uDhLtiIBlo287XXaAqyyIkGbE33vIE6aLmP7QaBDHOEECxfAIEwcsfWF1uy+18OwZntl5BDiQXEBtoObWbxGt7c5Zvus6ixRxTgIfMwTeT5/M+a6rcW0saBEzvAI1/defxFQF5cwB7TcNDuKORa/wPNb0+0KbohoBifzAt8QdR5BTuLx/DqfiuIydAD5HT4T6hRuxTXl2UGJ5c9o8R8VyqmOw4AID3P2bJa2erw3LF+fqqmN7efSbwZGEnZpcY/uJMnqeeikxSy/Xp3Z4aQIIBHEQ0AyNvCdJRfOsR2nXriA17hMnjdHo3K34Iu3H+2em9JhLhkfbfhP5dhHvfopDimmxi0TwtImb3/YaBSUMOzLGYEh35S5xa06jUACek6RyVh1KmTd7g4ATJmBvAdBAN9efms3KbYKVaW+77ogAAZSDEESJsJ84VpmYi5vxZuEzwgyI5yRfotMFRYxsNIOYyTJm490aixMzyEX1U7H5CRBjWScwbJgiBvC5ZZfhU1NpkXi2457xvbl81Wdg3NcYgtNzO0xG3LMfPzW1SuIBkGTrymwtz1UbqscJMgnnpz8tljdNpS9waJAb/AIibEmZ3uRZUajOHMXZQbAX3ANo87xbzVus8XzCLw289Rb72Wxa3LFwYMeImPkmNptwK+CIJdeCYAENmCZcCJmwjTmqdWZhuZrRGXNYgkA+8NiRPkNNF6jEUg8RNzAzXGWwMgeSxS7NY0XvucxkGLaea7T9WSdq5eL7axjoY+s+DFhkEgmAC4XMwdSsNaTpmJBbP9RtmIAFxM6LqPwoLwQBInLMiOYJ1hKWFykC8TBOpLQIJHKY0S5yrKo4d7w0yLEE8ViL8TstiG30t8b2sNjTTaGtF3AuLtzmuJm513U/8PBAAi9hpub+AkD7Cr4/CcVhBJgT4gC/gs3KU5VXr4h9SA15BzNzAQ0hl76WOv2VrhqpktscxuJOVpdsL3Ek214vWZ7QDImQGmI1uJJ87LBwha1vOQ5197THMCP8AavKaTlUdRrGOGaA50l54bEiIyAkSRO8C11zzQdna0NIcbcLj7smCDc5bjXYSujQpPOo4iBeLjkAdhfTqrDKAIDnNGYNDTBsBOoG9416qzPRvbmf9xpBzua4EGTmOWBAMjXTf+VSU8eSeNp6Obz3lto8REDcqxiaLhLh7wkGLGACMw0toI68lo+kS4RZuT4klxJHiST4KzKWdnKxZeAQzLF/DV0QADfbeVUxfYr7PLSWBwzAggiTveIVmpSM5hETNrxYb6yrjce5oDCZOWCDIDuZnY3/ZYmWm+UymqoMqgMLgA3RvDI3NoHh8ESpSBEjzZAO+ouN7onrlptUwJYS+nq6OG2WbRqLGY005qRmQASxxdoQScsiJAcTcb80xFfihrmgTaZGU9CoH0qjyHlzYAM6ZulouEu6m09aucssAGV2hnKXa2tYqDEYpoaC0mdDIGpubjZRYiiQc5uB6B1rj9VJ2fhfbPbnBFMOccw1dNyJM9EmM+k3eo5jcQdQDGh10O+vhqrWHzZuNr8rxwkh15M25rtVOzqTZyOcwum7SZ8ib/JRspPA4XHKNSHGT1LSUys11HSYSe1Rw1TMXA3ggkRB4bamIt1lW24lgnXUQHAxBEfUrGMoOLRDi9keF9tYIuq1PAP2dO8yTl3sp0xlJKuMqgluWSJvoRcdNv0U4qNNgQDBbrMkG+1rqOlhyxnC8W94+8eto+KqPp5iXNPFM9ST1WbjtOWnWotBJ4m/C/Too3vEEyJmI5Bc+uxtNoL3cR2mVEa2aIAPUaq3G6OTqMeQDJIFv9LL3G0xNjM2GkJhHsg580xqZK0eC4STYaDp4LP8Aq7SUzmJbYc9LMGp6z9VCG8RJ8Be95vHKMqka7mGkkTAIBnY/sq9R7hJd5ht/CyG21Nkm2l5FpOsG+t+q2DokgxcWMaEi23ipQ+xFhaTLY20uqzXNi1z/AHaHx5bwkt+nSOqORJMhzZMbzdx8lXrjhsDvprrIJ9fvees+d+Y8okb6Tuoy4OlpBygg66QBBHL9hyW4lrSm8u13MxttsoataHWGhOwOvj5q7icKwe4/MSBaIIve6rsoOJkiSG89jFzHn1SWXss10r/iSSQBpre/j81hS0qPFEgROx35c7ItbiuwKYgiNFSxLYNuaIsX1L4utPD6I+mMxbAiRZEV+IhpcDzlt8fy9Vt7Z1789AB8lhFy/lG/4rNOs4suZ4eQXM7SxDmRkJb4Ii6/hitMDVdnbc316rpY1gDhZESeJPHAx/vKvnIcLoi6RPrp1cQ+AMxVzAPJaJMoi5/VnqLE2LYtOvVbseZ1RFj62zieXQqPAsHJEVT63awezJjkqND3XfexRFqeUq3TF/T5K0aQJNkRZvqtG0xJssoizfR//9k=" class="w-full h-48 object-cover rounded-md mb-4">
+                <h3 class="text-xl font-bold">Pre-wedding Shoot</h3>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-lg">
+                <img src="https://www.redveds.com/wp-content/uploads/2023/09/EY6A2749-scaled-2-1366x2048.jpeg" class="w-full h-48 object-cover rounded-md mb-4">
+                <h3 class="text-xl font-bold">wedding Shoot</h3>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-lg">
+                <img src="https://i.pinimg.com/736x/82/3b/fd/823bfd940e4aea1d99e9b6d38aa366c5.jpg" class="w-full h-48 object-cover rounded-md mb-4">
+                <h3 class="text-xl font-bold">Birthday Shoot</h3>
+            </div>
+        </div>
+    </section>
 
-    <!-- Photos Section -->
-    <div class="photos">
-        <img src="https://thehoncho.app/wp-content/uploads/2025/06/wedding-couple-pose-15.jpg"
-             height="200" width="200" alt="Wedding Shoot">
+    <!-- Packages -->
+    <section class="bg-white py-16 px-6 text-center">
+        <h2 class="text-3xl font-semibold mb-8">Photography Packages</h2>
+        <div class="max-w-2xl mx-auto text-lg text-gray-700 mb-4">
+            <p>✨ Professional Photography & Videography</p>
+            <p>✨ High Quality Edited Photos</p>
+            <p>✨ Album & Video Available</p>
+            <p class="mt-4 font-bold text-2xl">Starting From ₹24,999</p>
+        </div>
+        <a href="#contact" class="bg-yellow-400 text-black font-semibold px-8 py-3 rounded-lg hover:bg-yellow-500 transition">Contact for Booking</a>
+    </section>
 
-        <img src="https://www.redveds.com/wp-content/uploads/2023/09/EY6A2749-scaled-2-1366x2048.jpeg"
-             height="200" width="200" alt="Maternity Shoot">
+    <!-- Contact -->
+    <section id="contact" class="py-16 px-6">
+        <h2 class="text-3xl font-semibold text-center mb-6">Contact for Booking</h2>
+        <div class="text-center text-xl text-gray-800">
+            <p>📞 Mobile: <a href="tel:8459521455" class="text-blue-600 hover:underline">8459521455</a></p>
+            <p>📍 Location: NIMGAON VAIJAPUR</p>
+        </div>
+    </section>
 
-        <img src=https://images.squarespace-cdn.com/content/v1/5dea90a8da78c349f0c30294/1675362195618-7VIMLE2KTIBNXKIPFC1H/_MG_2019-Edit.png
-             height="200" width="200" alt="Birthday Shoot">
-    </div>
-
-    <!-- Services Section -->
-    <div class="services">
-        <h2>Our Photography Services</h2>
-        <p>📸 Wedding Shoot Available</p>
-        <p>🤰 Maternity Shoot Available</p>
-        <p>🎂 Birthday Shoot Available</p>
-        <p>🎉 All Types of Shoots Available</p>
-    </div>
-
-    <!-- Packages Section -->
-    <div class="packages">
-        <h2>Photography Packages</h2>
-        <p>✨ Professional Photography & Videography</p>
-        <p>✨ High Quality Edited Photos</p>
-        <p>✨ Album & Video Available</p>
-        <p class="price">Starting From ₹24,999</p>
-    </div>
-
-    <!-- Contact Section -->
-    <h3>Contact for Booking</h3>
-    <p>📞 Mobile: 8459521455</p>
-    <p>📍 Location: NIMGAON VAIJAPUR  </p>
-
-
-    <h2>THANKU FOR VISIT</h2>
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white text-center py-4">
+        <p>© 2025 Rushi Tribhuvan Photography — Thank You for Visiting!</p>
+    </footer>
 
 </body>
 </html>
